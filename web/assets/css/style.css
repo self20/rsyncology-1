@@ -1,0 +1,239 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: "Droid Sans", "Liberation Sans", "DejaVu Sans", "Segoe UI", Sans-Serif;
+	color: #ffffff;
+	background-color:#4d4d4d;
+	width: 100%;
+	text-align:center;
+	background-image: url('../img/bg.png');
+	/*background-size: 100%;*/
+	background-attachment: fixed;
+}
+/****************************/
+/* 		   Generique		*/
+/****************************/
+/* Style des blocs (div) */
+div{
+	margin:0px;
+	padding:0px;
+}
+h1.titre{
+  margin:0px;
+  padding:0px;
+  font-size: 3em;
+  color: #55dd55;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
+}
+.box-title{
+	position:relative;
+	top:10px;
+	left:14px;
+	text-align:left;
+	margin:0;
+	padding:0;
+	font-size:14px;
+	font-weight:bold;
+	text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);
+}
+
+div.box{
+	width:600px;
+	margin: 20px auto;
+	background-color:rgba(128, 255, 128, 0.1);
+	border: 2px solid rgba(16, 92, 10, 0.3);
+	border-radius: 15px;
+}
+/* TOP */
+div.top{
+	height:30px;
+	z-index:3;
+}
+
+/* BOTTOM */
+div.bottom{
+	height:30px;
+	display: none;
+}
+div.bottom .left{
+	background-image: url('../img/box-bottom-left.png');
+}
+div.bottom .right{
+	background-image: url('../img/box-bottom-right.png');
+}
+div.bottom .middle{
+	background-image: url('../img/box-bottom.png');
+	background-repeat: repeat-x;
+}
+
+/* CENTER */
+div.center{	
+	background-repeat: repeat-y repeat-x;
+	padding:0 40px 10px 40px;
+}
+/* ALL */
+div.left{
+	float:left;
+	height:100%;
+	width:30px;
+}
+div.right{
+	float:right;
+	height:100%;
+	width:30px;
+}
+div.middle{
+	width:540px;
+	height:100%;
+	margin:0px 30px;
+	overflow:hidden;
+}
+
+.separator {
+	border-left:1px solid rgba(255,255,255,0.6);
+	border-right:1px solid rgba(255,255,255,0.6);
+	padding: 0px;
+	background-repeat: repeat-x;
+	height:9px;
+}
+.separator-top{
+	background:url(../img/top_line.png);
+}
+.separator-bottom{
+	background:url(../img/bottom_line.png);
+}
+
+ul, li {
+	list-style-type: none; 
+	margin: 0px; 
+	padding: 0px; 
+}
+/* Infobulle */
+a.hidden-span span {
+   display: none;
+   padding:10px 15px;
+   margin-left:15px;
+}
+a.hidden-span:hover span {
+   display: inline;
+   position: absolute;
+   white-space: nowrap;
+   background: rgba(0, 0, 0, 0.9);
+   border-radius: 10px;
+   box-shadow: 1px 1px 12px #000;
+   border: 1px solid rgba(255, 255, 255, 0.2);  
+   z-index:3; 
+}
+/* Style Progress Bar */
+.ui-progress-bar {
+  position: relative;
+  background-color: rgba(0, 0, 0, .90);
+  border-radius: 5px;
+}
+.ui-progress-bar .ui-progress {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background-color: #55dd55;
+  border-radius: 5px;
+}
+/****************************/
+/* 		Style Synchro		*/
+/****************************/
+.box-synchro{
+	width:600px;
+	margin-left:auto;
+	margin-right:auto;
+	text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
+	
+}
+.sync-file{
+  font-size:12px;
+  font-weight:bold;
+  
+}
+.infosync {
+  font-size:10px;
+  font-style:italic;
+  line-height:15px;
+}
+a.waiting-file {
+   color: #ffffff;
+   text-decoration: none;
+   border-bottom: 1px gray dotted;
+  font-size:10px;
+  font-style:italic;
+  line-height:15px;   
+}
+/* Sync Progress Bar */
+span.ui-label-sync {
+  font-size: 11px;
+  position: relative;
+  top:-4px;
+  line-height: 13px;
+  white-space: nowrap;
+  color:black;
+  text-shadow: none;
+}
+.ui-progress-bar-sync {
+  margin:5px 20px;
+  height: 15px;
+}
+.ui-progress-bar-sync .ui-progress-sync {
+  height: 15px;
+}
+/* History */
+.synchro-history{
+  text-align:left;
+  margin:5px 20px;
+  margin-top:5px;
+}
+.synchro-history h3 {
+  margin: 0px;
+  font-size:13px;
+  font-weight:bold;
+  text-decoration:underline rgba(255, 255, 255, 0.7);
+
+}
+.synchro-history a {
+   font-size:12px;
+   color: #ffffff;
+   text-decoration: none;
+}
+.cat-history{
+    margin-bottom:10px;
+}
+/****************************/
+/*	   Style Monitoring		*/
+/****************************/
+.box-monitoring{
+	/*float:right;*/
+}
+.server-stats-unit {
+	display:inline-block;
+	margin-left:10px;
+	margin-right:10px;
+}
+/* Monitoring Pogress Bar */
+.ui-progress-bar-stat {
+  height: 4px;
+  width:50px;
+  margin:5px 0px;
+}
+.ui-progress-bar-stat .ui-progress-stat {
+  height: 4px;
+}
+.server-stats-unit {
+  font-size:12px;
+}
+.uptime{
+  float:right;
+  margin-right:25px;
+  text-align:right;
+  font-style:italic;
+  font-size:12px;
+}
+
+

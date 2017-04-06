@@ -75,7 +75,7 @@ echo ""
 
 #Création de l'arborescence du script
 mkdir -p /home/$USER/script/rsync
-cp -R script/* /home/$USER/script/rsync
+cp -R scripts/* /home/$USER/script/rsync
 
 #Création de l'arborescence de la page web
 mkdir -p $FOLDERWEB
@@ -101,7 +101,7 @@ chown -R www-data:www-data $FOLDERWEB
 #write out current crontab
 crontab -l > mycron
 #echo new cron into cron file
-echo "* * * * * cd /home/$USER/synchro && ./synchro.sh > /dev/null" >> mycron
+echo "* * * * * cd /home/$USER/script/rsync/synchro && ./synchro.sh > /dev/null" >> mycron
 #install new cron file
 crontab mycron
 rm mycron

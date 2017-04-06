@@ -75,7 +75,7 @@ function envois_fichier
 }
 
 # Chargement des paramètres utilisateur et definition des fichiers de logs
-. ./config/user.cfg
+. ./conf/user.cfg
 
 
 # MAIN

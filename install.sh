@@ -87,7 +87,7 @@ sed -i "s/@user@/$USER/g;" /home/$USER/script/rsync/conf/user.cfg
 sed -i 's#@media_folder@#'$FOLDER'#' /home/$USER/script/rsync/conf/user.cfg
 sed -i "s/@nas_user@/$NASUSER/g;" /home/$USER/script/rsync/conf/user.cfg
 sed -i "s/@nas_ip@/$NASADDR/g;" /home/$USER/script/rsync/conf/user.cfg
-sed -i "s/@nas_port@/$NASPORT/g;" /home/$USER/script/rsync/synchro.sh
+sed -i "s/@nas_port@/$NASPORT/g;" /home/$USER/script/rsync/conf/user.cfg
 sed -i 's#@nas_folder@#'$NASFOLDER'#' /home/$USER/script/rsync/conf/user.cfg
 
 chmod +x /home/$USER/script/rsync/synchro.sh
